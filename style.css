@@ -1,0 +1,536 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Fin reset CSS */
+html{
+    font-size: 100%;
+}
+
+body{
+    font-family: 'Questrial',sans-serif;
+    background-color: #e2e2e2!important;
+}
+
+.full-height{
+    height: 100vh;
+}
+
+.position-container{
+    position: relative;
+}
+
+.position-absulute-center{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Bitter', serif;
+    color: #143C6A;
+}
+
+.logo{
+    background-image: url("img/logo_travelbook_blanc.png");
+    width: 269px;
+    height: 49px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.menu-theme{
+    color: #143C6A;
+    font-family: 'Bitter';
+    font-weight: 800;
+    font-style: italic;
+    font-size: 24px;
+    margin-right: 2em;
+}
+
+.menu-theme:hover{
+    color: #213E54;
+}
+
+.decouvrir-theme a{
+    color: #767E88;
+    text-decoration: none;
+}
+
+.decouvrir-theme a:hover{
+    color: #143C6A;
+}
+
+.decouvrir-theme a:focus, a:active{
+    color: #143C6A;
+}
+
+.no-underline:hover::after{
+    transition: none;
+    width: 0%;
+    left: 0%; 
+}
+
+.tooltiptext {
+    visibility: hidden;
+    background-color: #143C6A;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    z-index: 10;
+    transition: opacity 1s;
+}
+
+.tooltiptext-1{
+    left: 80%;
+}
+
+.tooltiptext-2{
+    right: 10%;  
+    top: 100%;
+    white-space:nowrap;
+}
+
+.navbar-brand:hover .tooltiptext , .about-btn:hover .tooltiptext, .close:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hero h1{
+    font-weight: 800;
+    font-style: italic;
+    color: #fff;
+}
+
+h2{
+    font-style: italic;
+    font-weight: 800!important;
+}
+
+.hero p{
+    color: #fff;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 400;
+}
+
+button.btn{
+    color: #fff;
+    background-color: #143C6A;
+    border-radius: 20px;
+    font-family: 'Bitter', serif;
+    font-weight: 700;
+    padding: 15px 35px 15px 35px;
+}
+
+.left-side-image{
+    background: linear-gradient(180deg, #213E54 0%, rgba(255, 255, 255, 0) 100%), url(img/profil-chefchaouen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-me{
+    border-radius: 15px;
+}
+
+ul { 
+    list-style: none; 
+    display: table;
+    text-align: center;
+}
+
+li { 
+    display: table-cell; 
+    position: relative; 
+}
+
+a {
+    color: #767E88;
+    font-family: 'Bitter', serif;
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+a:hover{
+    color: #143C6A;
+}
+
+a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 5px;
+    position: absolute;
+    background: #143C6A;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    border-radius: 20px;
+}
+
+a:hover:after , a:focus:after { 
+    width: 50%;
+    left: 25%; 
+}
+
+/* Carousel */
+.carousel-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-carousel{
+    height: 30vh;
+}
+
+.carousel-cell {
+    height: 30vh;
+    margin-right: 1em;
+    border-radius: 50px;
+    counter-increment: carousel-cell;
+    position: relative; 
+}
+
+.overlay {
+    height: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #213E54 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.overlay:hover{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.432) 0%, #213E54 100%);
+}
+
+.carousel-cell:hover{
+    cursor: pointer;
+}
+
+.pays-description{
+    margin: 0;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    -ms-transform: translateY(-5%);
+    transform: translateY(-5%);
+    color: #C4C4C4;
+    font-family: 'Questrial';
+    font-size: 100%;
+}
+
+.pays-description h3{
+    color: #fff;  
+}
+
+.flag-btn{
+    border-radius: 200px;
+    background-color: #C4C4C4;
+}
+
+@media (max-width: 575px){
+    html{
+        font-size: 1rem;
+    }
+    .logo{
+        margin-top: 1em;
+    }
+    .p-5{
+        padding: 1em!important;
+    }
+    .w-cell{
+        width: 50%;
+    }
+    .w-flag-btn{
+        width: 30%;
+    }
+    .flag-round{
+        width: 20vw;
+        height: 20vw;
+    }
+    #carousel-pays{
+        height: 20vh;
+    }
+}
+
+@media (min-width: 576px){
+    html{
+        font-size: 1rem;
+    }
+    .w-cell{
+        width: 50%;
+    }
+    .w-flag-btn{
+        width: 30%;
+    }
+    .flag-round{
+        width: 10vw;
+        height: 10vw;
+    }
+    #carousel-pays{
+        height: 25vh;
+    }
+}
+
+@media (min-width: 768px){
+    html{
+        font-size: 1rem;
+    }
+    .w-cell{
+        width: 40%;
+    }
+    .w-flag-btn{
+        width: 15%;
+    }
+    .flag-round{
+        width: 7vw;
+        height: 7vw;
+    }
+    #carousel-pays{
+        height: 25vh;
+    }
+}
+
+@media (min-width: 992px){
+    html{
+        font-size: 1rem;
+    }
+    .w-cell{
+        width: 50%;
+    }
+    .w-flag-btn{
+        width: 25%;
+    }
+    .flag-round{
+        width: 7vw;
+        height: 7vw;
+    }
+    #carousel-pays{
+        height: 25vh;
+    }
+}
+
+@media (min-width: 1200px){
+    html{
+        font-size: 1rem;
+    }
+    .w-cell{
+        width: 30%;
+    }
+    .w-flag-btn{
+        width: 20%;
+    }
+    .flag-round{
+        width: 7vw;
+        height: 7vw;
+    }
+    #carousel-pays{
+        height: 25vh;
+    }
+}
+
+@media (min-width: 1600px){
+    html{
+        font-size: 1rem;
+    }
+    .w-cell{
+        width: 30%;
+    }
+    .w-flag-btn{
+        width: 15%;
+    }
+    .flag-round{
+        width: 6vw;
+        height: 6vw;
+    }
+    #carousel-pays{
+        height: 25vh;
+    }
+}
+
+#japon{
+    background: url(img/nara.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#france{
+    background: url(img/dune-du-pilat.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#france-roadtrip{
+    background: url(img/dune-du-pilat.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#espagne{
+    background: url(img/seville.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#espagne-roadtrip{
+    background: url(img/seville.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#maroc{
+    background: url(img/chefchaouen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#maroc-roadtrip{
+    background: url(img/chefchaouen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.flag-round{
+    margin: 1vh auto;
+    position: relative;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.flag-round p{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 3vh;
+}
+
+.flag-btn h3{
+    text-align: center;
+    margin: auto;
+    color: #143C6A;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.flag-btn:hover{
+    background-color: #143C6A;
+    cursor: pointer;
+}
+
+.flag-btn:hover > h3{
+    color: #fff;
+}
+
+/* Modal */
+.close{
+    position: absolute;
+    left: 0.5em; top: 0;
+    border: none;
+    font-size: 3em;
+    font-weight: 500;
+    background: none;
+    color: #143C6A;
+    z-index: 10;
+}
+
+/* Tabs */
+ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul.tabs li{
+	background: none;
+	color: #767E88;
+    font-family: 'Bitter';
+    font-style: italic;
+    font-weight: 700;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+ul.tabs li.current{
+	color: #143C6A;
+}
+
+.tab-content{
+	display: none;
+}
+
+.tab-content.current{
+	display: inherit;
+}
+
+ul.tabs li.curent li:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 5px;
+    position: absolute;
+    background: #143C6A;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    border-radius: 20px;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Book</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Questrial&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+
+      <section class="col-lg-5 full-height left-side-image p-lg-5 p-md-3 p-sm-1 position-container">
+          <div class="logo"></div>
+          <div class="hero position-absulute-center p-1">
+              <h1>Les plus beaux pays que j'ai visité</h1>
+              <p>Prenez place au voyage et explorez les plus belles histoires du monde</p>
+              <button class="btn" href="#myModal9" data-toggle="modal">Explorer</button>
+          </div>
+      </section>
+
+      <main role="main" class="col-lg-7 full-height p-lg-5 p-md-3 p-sm-2" style="background-color: #E2E2E2;">
+        <nav class="navbar navbar-expand-lg p-0">
+            <div class="container-fluid p-0">
+              <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <a class="navbar-brand no-underline" href="#mapModal" data-toggle="modal">
+                    <img src="img/world_icon.png" alt="icon" height="40" class="d-inline-block align-top">
+                    <span class="tooltiptext tooltiptext-1">Afficher la carte</span>
+                </a>
+              </div>
+              <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link menu-theme" href="#">Galerie</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu-theme" href="#">Stories</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link about-btn no-underline" href="#aboutModal" data-toggle="modal"><img class="about-me" src="img/photo_profil.jpg" alt="à propos" height="40px">
+                        <span class="tooltiptext tooltiptext-2">À propos</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+      
+        <section class="decouvrir">
+          <h2 class="mt-2">Découvrir</h2>
+
+          <ul class="tabs">
+            <li class="tab-link current" data-tab="tab-1">Mes coups de coeur</li>
+            <li class="tab-link" data-tab="tab-2">Road Trip</li>
+            <li class="tab-link" data-tab="tab-3">Travel bucket list</li>
+          </ul>
+        
+          <div id="tab-1" class="tab-content current">
+            <div class="main-carousel" data-flickity>
+              <article class="carousel-cell w-cell" id="japon"><div class="overlay"><div class="pays-description"><h3>Japon</h3><p>Tradition et modernité</p></div></div></article>
+              <article class="carousel-cell w-cell" id="france"><div class="overlay"><div class="pays-description"><h3>France</h3><p>Un pays de contrastes</p></div></div></article>
+              <article class="carousel-cell w-cell" id="espagne"><div class="overlay"><div class="pays-description"><h3>Espagne</h3><p>Des identités multiples</p></div></div></article>
+              <article class="carousel-cell w-cell" id="maroc"><div class="overlay"><div class="pays-description"><h3>Maroc</h3><p>Aux portes du Sahara</p></div></div></article>
+            </div>
+          </div>
+        
+          <div id="tab-2" class="tab-content">
+            <div class="main-carousel" data-flickity='{ "asNavFor": ".main-carousel",'>
+              <article class="carousel-cell w-cell" id="espagne-roadtrip"><div class="overlay"><div class="pays-description"><h3>Espagne</h3><p>À la découverte de l'Andalousie</p></div></div></article>
+			        <article class="carousel-cell w-cell" id="maroc-roadtrip"><div class="overlay"><div class="pays-description"><h3>Maroc</h3><p>Un pays aux multiples facettes</p></div></div></article>
+			        <article class="carousel-cell w-cell" id="france-roadtrip"><div class="overlay"><div class="pays-description"><h3>France</h3><p>La grande boucle</p></div></div></article>
+            </div>
+          </div>
+        
+          <div id="tab-3" class="tab-content">
+            <div class="main-carousel" data-flickity>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇿🇦</p></div><h3>Afrique du Sud</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇦🇷</p></div><h3>Argentine</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇦🇺</p></div><h3>Australie</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇨🇦</p></div><h3>Canada</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇨🇱</p></div><h3>Chili</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇨🇴</p></div><h3>Colombie</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇰🇷</p></div><h3>Corée du Sud</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇭🇷</p></div><h3>Croatie</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇨🇷</p></div><h3>Costa Rica</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇨🇺</p></div><h3>Cuba</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇩🇰</p></div><h3>Danemark</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇺🇸</p></div><h3>États-Unis</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇬🇷</p></div><h3>Grèce</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇮🇷</p></div><h3>Iran</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇮🇸</p></div><h3>Islande</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇯🇴</p></div><h3>Jordanie</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇰🇪</p></div><h3>Kenya</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇲🇹</p></div><h3>Malte</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇳🇿</p></div><h3>Nouvelle-Zélande</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇵🇭</p></div><h3>Philippines</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇵🇪</p></div><h3>Pérou</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇱🇰</p></div><h3>Sri Lanka</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇸🇪</p></div><h3>Suède</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇹🇿</p></div><h3>Tanzanie</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇹🇷</p></div><h3>Turquie</h3></article>
+              <article class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇻🇳</p></div><h3>Vietnam</h3></article>
+              <article class="carousel-cell"></article>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="carousel-section-pays">
+            <h2 class="m-4">Les pays visités</h2>
+            <div class="main-carousel" data-flickity>
+              <div class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇦🇩</p></div><h3>Andorre</h3></div>
+              <div class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇧🇪</p></div><h3>Belgique</h3></div>
+              <div class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇰🇭</p></div><h3>Cambodge</h3></div>
+              <div class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇪🇸</p></div><h3>Espagne</h3></div>
+              <div class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇫🇷</p></div><h3>France</h3></div>
+              <div class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇮🇪</p></div><h3>Irlande</h3></div>
+              <div class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇮🇹</p></div><h3>Italie</h3></div>
+              <div class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇯🇵</p></div><h3>Japon</h3></div>
+              <div class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇱🇦</p></div><h3>Laos</h3></div>
+              <div class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇱🇺</p></div><h3>Luxembourg</h3></div>
+              <div class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇲🇬</p></div><h3>Madagascar</h3></div>
+              <div class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇲🇦</p></div><h3>Maroc</h3></div>
+              <div class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇲🇨</p></div><h3>Monaco</h3></div>
+              <div class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇲🇲</p></div><h3>Myanmar</h3></div>
+              <div class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇳🇱</p></div><h3>Pays-Bas</h3></div>
+              <div class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇵🇹</p></div><h3>Portugal</h3></div>
+              <div class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇶🇦</p></div><h3>Qatar</h3></div>
+              <div class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇬🇧</p></div><h3>Royaume-Uni</h3></div>
+              <div class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇨🇭</p></div><h3>Suisse</h3></div>
+              <div class="carousel-cell flag-btn w-flag-btn h-100 p-3"><div class="flag-round"><p>🇹🇭</p></div><h3>Thaïlande</h3></div>
+            </div>
+        </section>
+      </main>
+
+    </div>
+</div>
+
+<!-- Fenêtre modale -->
+<div id="myModal9" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-fullscreen">
+    <div class="modal-content padding-container">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <div class="modal-body">
+        <p>Fenêtre modale 1</p>
+    </div>
+    </div>
+</div>
+</div>
+
+<!-- Fenêtre modale Map -->
+<div id="mapModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <div class="modal-body padding-container">
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                Fenêtre modale 2
+              </div>
+              <div class="col-sm">
+                Map
+              </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+
+<!-- Fenêtre modale A Propos -->
+<div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <div class="modal-body padding-container">
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm">
+                One of three columns
+              </div>
+              <div class="col-sm">
+                One of three columns
+              </div>
+              <div class="col-sm">
+                One of three columns
+              </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
