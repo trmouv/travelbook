@@ -214,7 +214,7 @@ a:after {
     border-radius: 20px;
 }
 
-a:hover:after , a:focus:after { 
+a:hover:after { 
     width: 50%;
     left: 25%; 
 }
@@ -521,3 +521,11 @@ ul.tabs li.current{
 .tab-content.current{
 	display: inherit;
 }
+
+#chartdiv {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Bitter';
+    font-size: 1.25rem;
+}
+
